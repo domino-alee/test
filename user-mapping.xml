@@ -8,7 +8,7 @@
        <connection name="default">
          <protocol>vnc</protocol>
          <param name="hostname">localhost</param>
-         <param name="port">5901</param>
+         <param name="port">5909</param>
          <param name="password">domino</param>
        </connection>
     </authorize>
