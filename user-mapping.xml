@@ -1,0 +1,16 @@
+<user-mapping>
+
+    <!-- Per-user authentication and config information -->
+    <authorize
+         username="domino"
+         password="domino">
+      
+       <connection name="default">
+         <protocol>vnc</protocol>
+         <param name="hostname">localhost</param>
+         <param name="port">5901</param>
+         <param name="password">domino</param>
+       </connection>
+    </authorize>
+
+</user-mapping>
