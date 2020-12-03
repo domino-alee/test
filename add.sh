@@ -7,7 +7,7 @@ echo "spark.io.encryption.enabled true" >> /opt/test/conf/spark-defaults.conf
 echo "spark.authenticate.enableSaslEncryption true" >> /opt/test/conf/spark-defaults.conf
 echo "spark.ssl.enabled true" >> /opt/test/conf/spark-defaults.conf
 echo "spark.ssl.ui.port 8080" >> /opt/test/conf/spark-defaults.conf
-echo "spark.master.ui.port 9090" >> /opt/test/conf/spark-defaults.conf
+echo "spark.master.ui.port 7680" >> /opt/test/conf/spark-defaults.conf
 echo "spark.ssl.keyPassword Domino123!@#" >> /opt/test/conf/spark-defaults.conf
 echo "spark.ssl.keyStorePassword Domino123!@#" >> /opt/test/conf/spark-defaults.conf
 echo "spark.ssl.protocol TLSv1.2" >> /opt/test/conf/spark-defaults.conf
