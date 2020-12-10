@@ -10,6 +10,6 @@ echo "spark.executor.extraJavaOptions -Djava.security.auth.login.config=/opt/jaa
 echo "SPARK_CONF_DIR=/opt/test/conf" >> /opt/test/conf/spark-env.sh
 echo "HADOOP_TOKEN_FILE_LOCATION=/opt/spark.token" >> /opt/test/conf/spark-env.sh
 echo "SPARK_DAEMON_JAVA_OPTS=\"-Djava.security.auth.login.config=/opt/jaas.conf -Djava.security.krb5.conf=/etc/krb5.conf\"" >> /opt/test/conf/spark-env.sh
-echo "HADOOP_CONF_DIR=/opt/hahttps://github.com/domino-alee/testdoop-binaries-configs/configs/hadoop/3.1.4.0-315/0" >> /opt/test/conf/spark-env.sh
+echo "HADOOP_CONF_DIR=/opt/hadoop-binaries-configs/configs/hadoop/3.1.4.0-315/0" >> /opt/test/conf/spark-env.sh
 env
 cd /opt && kinit -kt spark.service.keytab spark/ip-10-99-121-113.ec2.internal@EC2.INTERNAL && klist
