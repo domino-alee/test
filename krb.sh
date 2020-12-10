@@ -6,7 +6,7 @@ echo "spark.kerberos.access.hadoopFileSystems hdfs://ec2-107-20-103-193.compute-
 echo "spark.kerberos.keytab /opt/spark.service.keytab" >> /opt/test/conf/spark-defaults.conf
 echo "spark.kerberos.principal spark/ip-10-99-121-113.ec2.internal@EC2.INTERNAL" >> /opt/test/conf/spark-defaults.conf
 echo "java.security.auth.login.config /opt/jaas.conf" >> /opt/test/conf/spark-defaults.conf
-#echo "spark.executorEnv.HADOOP_TOKEN_FILE_LOCATION /opt/spark.token" >> /opt/test/conf/spark-defaults.conf
+echo "spark.executorEnv.HADOOP_TOKEN_FILE_LOCATION /opt/spark.token" >> /opt/test/conf/spark-defaults.conf
 echo "spark.executor.extraJavaOptions -Djava.security.auth.login.config=/opt/jaas.conf" >> /opt/test/conf/spark-defaults.conf
 
 echo "SPARK_CONF_DIR=/opt/test/conf" >> /opt/bitnami/spark/conf/spark-env.sh
