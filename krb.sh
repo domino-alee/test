@@ -11,3 +11,4 @@ echo "HADOOP_CONF_DIR=/opt/hadoop-binaries-configs/configs/hadoop/3.1.4.0-315/0"
 export SPARK_CONF_DIR=/opt/test/conf
 export HADOOP_CONF_DIR=/opt/hadoop-binaries-configs/configs/hadoop/3.1.4.0-315/0
 env
+cd /opt && kinit -kt spark.service.keytab spark/ip-10-99-121-113.ec2.internal@EC2.INTERNAL && klist
