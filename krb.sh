@@ -11,6 +11,7 @@ echo "SPARK_CONF_DIR=/opt/test/conf" >> /opt/test/conf/spark-env.sh
 echo "HADOOP_TOKEN_FILE_LOCATION=/opt/spark.token" >> /opt/test/conf/spark-env.sh
 echo "SPARK_DAEMON_JAVA_OPTS=\"-Djava.security.auth.login.config=/opt/jaas.conf -Djava.security.krb5.conf=/etc/krb5.conf\"" >> /opt/test/conf/spark-env.sh
 echo "HADOOP_CONF_DIR=/opt/hadoop-binaries-configs/configs/hadoop/3.1.4.0-315/0" >> /opt/test/conf/spark-env.sh
+export SPARK_CONF_DIR=/opt/test/conf
 export HADOOP_TOKEN_FILE_LOCATION=/opt/spark.token
 export SPARK_DAEMON_JAVA_OPTS="-Djava.security.auth.login.config=/opt/jaas.conf -Djava.security.krb5.conf=/etc/krb5.conf"
 export HADOOP_CONF_DIR=/opt/hadoop-binaries-configs/configs/hadoop/3.1.4.0-315/0
