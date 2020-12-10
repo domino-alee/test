@@ -7,10 +7,10 @@ echo "spark.kerberos.principal spark/ip-10-99-121-113.ec2.internal@EC2.INTERNAL"
 echo "java.security.auth.login.config /opt/jaas.conf" >> /opt/test/conf/spark-defaults.conf
 echo "spark.executor.extraJavaOptions -Djava.security.auth.login.config=/opt/jaas.conf" >> /opt/test/conf/spark-defaults.conf
 echo "SPARK_CONF_DIR=/opt/test/conf" >> /opt/test/conf/spark-env.sh
-echo "SPARK_DAEMON_JAVA_OPTS=\"-Djava.security.auth.login.config=/opt/jaas.conf\"" >> /opt/test/conf/spark-env.sh
+echo "SPARK_DAEMON_JAVA_OPTS=\"-Djava.security.auth.login.config=/opt/jaas.conf -Djava.security.krb5.conf=/etc/krb5.conf\"" >> /opt/test/conf/spark-env.sh
 echo "HADOOP_CONF_DIR=/opt/hadoop-binaries-configs/configs/hadoop/3.1.4.0-315/0" >> /opt/test/conf/spark-env.sh
 echo "SPARK_CONF_DIR=/opt/test/conf" >> /opt/bitnami/spark/conf/spark-env.sh
-echo "SPARK_DAEMON_JAVA_OPTS=\"-Djava.security.auth.login.config=/opt/jaas.conf\"" >> /opt/bitnami/spark/conf/spark-env.sh
+echo "SPARK_DAEMON_JAVA_OPTS=\"-Djava.security.auth.login.config=/opt/jaas.conf -Djava.security.krb5.conf=/etc/krb5.conf\"" >> /opt/bitnami/spark/conf/spark-env.sh
 echo "HADOOP_CONF_DIR=/opt/hadoop-binaries-configs/configs/hadoop/3.1.4.0-315/0" >> /opt/bitnami/spark/conf/spark-env.sh
 export SPARK_CONF_DIR=/opt/test/conf
 export HADOOP_CONF_DIR=/opt/hadoop-binaries-configs/configs/hadoop/3.1.4.0-315/0
